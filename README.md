@@ -1,4 +1,4 @@
-# Sales Dashboard
+# LeadFlow (sales dashboard)
 A modern full-stack sales dashboard web application designed to manage and visualize leads efficiently with categorized lead tracking, filtering, and sorting features.
 Built with React frontend, Express/Node backend, MONGODB and a responsive UI, it enhances productivity by organizing sales data into a clear and actionable format across devices.
 

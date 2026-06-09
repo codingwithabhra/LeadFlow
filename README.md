@@ -11,7 +11,7 @@ Built with React frontend, Express/Node backend, MONGODB and a responsive UI, it
 
 ## Quick Start
 ```
-git clone https://github.com/codingwithabhra/anvaya-dashboard.git
+git clone https://github.com/codingwithabhra/LeadFlow.git
 cd <your-repo>
 npm install
 npm run dev # or `npm start` / `yarn dev`

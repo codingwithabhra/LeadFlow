@@ -10,7 +10,7 @@ function App() {
     <>
       {/* Header */}
       <header className="bg-white py-3 position-relative">
-        <h1 className="fs-3 fw-bolder text-center m-0">Anvaya CRM Dashboard</h1>
+        <h1 className="fs-3 fw-bolder text-center m-0">LeadFlow</h1>
 
         {/* Toggle button (only visible on small screens) */}
         <button

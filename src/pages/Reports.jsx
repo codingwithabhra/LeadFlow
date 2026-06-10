@@ -8,7 +8,7 @@ const Reports = () => {
     <>
       <header className="bg-white py-3 position-relative shadow-sm">
         <h1 className="fs-2 text-center text-dark m-0">
-          Anvaya CRM Reports
+          LeadFlow : Reports
         </h1>
 
         {/* Toggle button (only visible on small screens) */}

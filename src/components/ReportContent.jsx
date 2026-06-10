@@ -114,7 +114,7 @@ const ReportContent = () => {
   return (
     <>
       <div className="content-area">
-        <h2 className="text-secondary pb-2">Report Overview</h2>
+        <h2 className="text-secondary my-3 pb-2">Report Overview</h2>
 
         {/* PIE CHART */}
         <div className="px-3 py-4 mb-4 rounded shadow-sm" style={{ backgroundColor: "rgba(255, 255, 0, 0.2)" }}>
@@ -140,7 +140,7 @@ const ReportContent = () => {
         {/* BAR CHART */}
         <div className="my-2 px-3 py-4 mb-4 rounded shadow-sm" style={{ backgroundColor: "rgba(251, 206, 177, 0.3)" }}>
           <div className="container text-center">
-            <h4 className="mb-3">Leads Closed by Sales Agent: :</h4>
+            <h4 className="mb-3">Leads Closed by Sales Agent :</h4>
             <div
               className="chart mx-auto my-2"
               style={{

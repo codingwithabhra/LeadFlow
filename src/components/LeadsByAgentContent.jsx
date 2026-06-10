@@ -35,9 +35,9 @@ const LeadsByAgentContent = () => {
       <div className="content-area">
         <div className="newLeads bg-white px-3 py-4 rounded shadow-sm">
           <h4 className="fs-5 fw-bold">
-            Sales Agent :{" "}
+            
             <span className="text-white fs-5 badge bg-success">
-              {agentDetails.name} ({agentDetails.email})
+              {agentDetails?.name} ({agentDetails?.email})
             </span>
           </h4>
           <hr />

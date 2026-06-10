@@ -4,23 +4,22 @@ import Sidebar from "./components/Sidebar";
 import Maincontent from "./components/Maincontent";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
       {/* Header */}
-      <header className="bg-white py-3 position-relative">
-        <h1 className="fs-3 fw-bolder text-center m-0">LeadFlow</h1>
+      {/* <header className="bg-white py-3 position-relative">
+        <h1 className="fs-3 fw-bolder text-center m-0">LeadFlow</h1> */}
 
         {/* Toggle button (only visible on small screens) */}
         <button
-          className="btn btn-primary d-lg-none position-absolute top-100 end-0 mx-2 my-2"
+          className="btn btn-primary d-lg-none position-absolute end-0 mx-2 my-2"
           data-bs-toggle="offcanvas"
           data-bs-target="#mobileSidebar"
         >
           ☰
         </button>
-      </header>
+      {/* </header> */}
 
       {/* Sidebar Offcanvas (Mobile) */}
       <div
@@ -42,18 +41,18 @@ function App() {
       </div>
 
       {/* Desktop Layout */}
-      <main className="container-fluid mt-3">
-        <div className="row g-3">
+      <main className="container-fluid">
+        <div className="row">
           {/* Sidebar (Desktop only) */}
-          <div className="col-lg-3 d-none d-lg-block">
+          <div className="col-lg-2 d-none d-lg-block px-0">
             <div className="h-100 rounded shadow-sm">
               <Sidebar />
             </div>
           </div>
 
           {/* Main Content */}
-          <div className="col-12 col-lg-9">
-            <div className="">
+          <div className="col-12 col-lg-10 px-3">
+            <div className="mt-3">
               <Maincontent />
             </div>
           </div>

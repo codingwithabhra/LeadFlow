@@ -7,8 +7,8 @@ import CompleteAgentList from "../components/CompleteAgentList";
 const Settings = () => {
   return (
     <>
-      <header className="bg-white py-3 position-relative shadow-sm">
-        <h1 className="fs-2 text-center text-dark m-0">Settings</h1>
+      {/* <header className="bg-white py-3 position-relative shadow-sm">
+        <h1 className="fs-2 text-center text-dark m-0">Settings</h1> */}
 
         {/* Toggle button (only visible on small screens) */}
         <button
@@ -18,7 +18,7 @@ const Settings = () => {
         >
           ☰
         </button>
-      </header>
+      {/* </header> */}
 
       {/* Sidebar Offcanvas (Mobile) */}
       <div
@@ -39,18 +39,18 @@ const Settings = () => {
         </div>
       </div>
 
-      <main className="container-fluid mt-3">
-        <div className="row g-3">
+      <main className="container-fluid p-0 overflow-hidden">
+        <div className="row">
           {/* Sidebar (Desktop only) */}
-          <div className="col-lg-3 d-none d-lg-block">
+          <div className="col-lg-2 d-none d-lg-block">
             <div className="h-100 rounded shadow-sm">
               <Sidebar2 />
             </div>
           </div>
 
           {/* Main Content */}
-          <div className="col-12 col-lg-9">
-            <div className="">
+          <div className="col-12 col-lg-10">
+            <div className="mt-3 mx-2">
               <div>
                 <CompleteLeadList />
               </div>

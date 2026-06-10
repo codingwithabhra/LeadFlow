@@ -16,8 +16,8 @@ const Leaddetails = () => {
     <>
       {findLead && (
         <div>
-          <header className="bg-white text-center text-dark py-3 shadow-sm">
-            <h1 className="fs-4">Lead Management : {findLead.name}</h1>
+          {/* <header className="bg-white text-center text-dark py-3 shadow-sm">
+            <h1 className="fs-4">Lead Management : {findLead.name}</h1> */}
 
             <button
               className="btn btn-primary d-lg-none position-absolute top-18 end-0 mx-2 my-2"
@@ -26,7 +26,7 @@ const Leaddetails = () => {
             >
               ☰
             </button>
-          </header>
+          {/* </header> */}
 
           {/* Sidebar Offcanvas (Mobile) */}
           <div
@@ -48,21 +48,21 @@ const Leaddetails = () => {
           </div>
 
           {/* Desktop Layout */}
-          <main className="container-fluid mt-3">
-            <div className="row g-3">
+          <main className="container-fluid p-0 overflow-hidden">
+            <div className="row">
               {/* Sidebar (Desktop only) */}
-              <div className="col-lg-3 d-none d-lg-block">
+              <div className="col-lg-2 d-none d-lg-block">
                 <div className="h-100 rounded shadow-sm">
                   <Sidebar2 />
                 </div>
               </div>
 
               {/* Main Content */}
-              <div className="col-12 col-lg-9">
-                <div className="">
+              <div className="col-12 col-lg-10">
+                <div className="mt-3 mx-2">
                   <LeadDetails />
                 </div>
-                <div className="my-3">
+                <div className="my-3 mx-2">
                   <Comments leadId={findLead._id} />
                 </div>
               </div>

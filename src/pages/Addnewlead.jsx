@@ -8,8 +8,6 @@ const Addnewlead = () => {
   return (
     <>
       {/* Header */}
-      <header className="bg-white py-3 position-relative">
-        <h1 className="fs-3 fw-bold text-center m-0">Add New Lead</h1>
 
         {/* Toggle button (only visible on small screens) */}
         <button
@@ -19,7 +17,7 @@ const Addnewlead = () => {
         >
           ☰
         </button>
-      </header>
+      {/* </header> */}
 
       {/* Sidebar Offcanvas (Mobile) */}
       <div
@@ -41,18 +39,18 @@ const Addnewlead = () => {
       </div>
 
       {/* Desktop Layout */}
-      <main className="container-fluid mt-3">
-        <div className="row g-3">
+      <main className="container-fluid p-0 overflow-hidden">
+        <div className="row">
           {/* Sidebar (Desktop only) */}
-          <div className="col-lg-3 d-none d-lg-block">
-            <div className="rounded shadow-sm" style={{height: "100%", minHeight: "85vh"}}>
+          <div className="col-lg-2 d-none d-lg-block">
+            <div className="rounded shadow-sm" style={{height: "100%", minHeight: "100vh"}}>
               <Sidebar2 />
             </div>
           </div>
 
           {/* Main Content */}
-          <div className="col-12 col-lg-9">
-            <div className="container">
+          <div className="col-12 col-lg-10">
+            <div className="container mt-3">
               <AddNewLead />
             </div>
           </div>

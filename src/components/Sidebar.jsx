@@ -5,23 +5,30 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className="sidebar d-flex flex-column p-4 text-white rounded"
+        className="sidebar d-flex flex-column p-4 text-white"
         style={{
           height: "100%",
           background: "#003153",
         }}
       >
-        <h4 className="text-center fw-bold fs-3 mb-5">CRM Panel</h4>
+        <Link className="mb-5" to="/">
+          <img
+            src="/LeadFlow-logo.png"
+            alt="LeadFlow"
+            className="img-fluid"
+            style={{
+              maxWidth: "150px",
+              width: "100%",
+              height: "auto",
+            }}
+          />
+        </Link>
 
         <nav>
           <ul className="list-unstyled">
             <li className="mb-4">
               <Link className="sidebar-link fs-5" to="/leads">
-                <img
-                  src="/add (3).png"
-                  alt=""
-                  className="sidebar-icon"
-                />
+                <img src="/add (3).png" alt="" className="sidebar-icon" />
                 <span>Leads</span>
               </Link>
             </li>
@@ -35,33 +42,21 @@ const Sidebar = () => {
 
             <li className="mb-4">
               <Link className="sidebar-link fs-5" to="/leads/agents">
-                <img
-                  src="/people (1).png"
-                  alt=""
-                  className="sidebar-icon"
-                />
+                <img src="/people (1).png" alt="" className="sidebar-icon" />
                 <span>Agents</span>
               </Link>
             </li>
 
             <li className="mb-4">
               <Link className="sidebar-link fs-5" to="/leads/reports">
-                <img
-                  src="/analysis.png"
-                  alt=""
-                  className="sidebar-icon"
-                />
+                <img src="/analysis.png" alt="" className="sidebar-icon" />
                 <span>Reports</span>
               </Link>
             </li>
 
             <li className="mb-4">
               <Link className="sidebar-link fs-5" to="/settings">
-                <img
-                  src="/setting.png"
-                  alt=""
-                  className="sidebar-icon"
-                />
+                <img src="/setting.png" alt="" className="sidebar-icon" />
                 <span>Settings</span>
               </Link>
             </li>

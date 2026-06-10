@@ -44,8 +44,8 @@ const AddAgents = () => {
   return (
     <>
       {/* Header */}
-      <header className="bg-white py-3 position-relative">
-        <h1 className="fs-3 fw-bold text-center m-0">Add New Sales Agent</h1>
+      {/* <header className="bg-white py-3 position-relative">
+        <h1 className="fs-3 fw-bold text-center m-0">Add New Sales Agent</h1> */}
 
         {/* Toggle button (only visible on small screens) */}
         <button
@@ -55,7 +55,7 @@ const AddAgents = () => {
         >
           ☰
         </button>
-      </header>
+      {/* </header> */}
 
       {/* Sidebar Offcanvas (Mobile) */}
       <div
@@ -77,21 +77,21 @@ const AddAgents = () => {
       </div>
 
       {/* Desktop Layout */}
-      <main className="container-fluid mt-3">
+      <main className="container-fluid p-0 overflow-hidden">
         <div className="row g-3">
           {/* Sidebar (Desktop only) */}
-          <div className="col-lg-3 d-none d-lg-block">
+          <div className="col-lg-2 d-none d-lg-block">
             <div
               className="rounded shadow-sm"
-              style={{ height: "100%", minHeight: "85vh" }}
+              style={{ height: "100%", minHeight: "100vh" }}
             >
               <Sidebar2 />
             </div>
           </div>
 
           {/* Main Content */}
-          <div className="col-12 col-lg-9">
-            <div className="container">
+          <div className="col-12 col-lg-10">
+            <div className="container mt-3">
               <div className="bg-white p-4 mx-auto rounded shadow-sm">
                 <h2 className="text-secondary">Add Agent</h2>
                 <hr />

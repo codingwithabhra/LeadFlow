@@ -42,7 +42,7 @@ const Leadoverview = () => {
 
   return (
     <>
-      <div className="content-area">
+      <div className="content-area mt-2">
         <div className="newLeads bg-white px-3 py-4 rounded shadow-sm">
           <div className="container">
             <h2 className="text-secondary">Lead Overview</h2>

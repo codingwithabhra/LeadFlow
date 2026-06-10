@@ -34,7 +34,7 @@ const Maincontent = () => {
 
   return (
     <>
-      <h2 className="text-secondary">Dashboard</h2>
+      <h2 className="text-secondary py-2">Dashboard</h2>
       <div className="content-area">
         {/* NEW LEADS */}
         <div className="newLeads bg-white px-3 py-4 rounded shadow-sm">

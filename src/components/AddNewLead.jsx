@@ -90,7 +90,8 @@ const AddNewLead = () => {
   return (
     <>
       <div>
-        <div className="container">
+        <h2 className="text-secondary py-2">Add New Lead Form</h2>
+        <div className="container mt-4">
           <div
             className="bg-white p-4 mx-auto rounded shadow-sm"
             style={{ maxWidth: "1000px" }}

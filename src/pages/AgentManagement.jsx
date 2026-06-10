@@ -6,10 +6,10 @@ import Sidebar2 from "../components/Sidebar2";
 const AagentManagement = () => {
   return (
     <>
-      <header className="bg-white py-3 position-relative shadow-sm">
+      {/* <header className="bg-white py-3 position-relative shadow-sm">
         <h1 className="fs-2 text-center text-dark m-0">
           Sales Agent Management
-        </h1>
+        </h1> */}
 
         {/* Toggle button (only visible on small screens) */}
         <button
@@ -19,7 +19,7 @@ const AagentManagement = () => {
         >
           ☰
         </button>
-      </header>
+      {/* </header> */}
 
       {/* Sidebar Offcanvas (Mobile) */}
       <div
@@ -41,18 +41,18 @@ const AagentManagement = () => {
       </div>
 
       {/* Desktop Layout */}
-      <main className="container-fluid mt-3">
-        <div className="row g-3">
+      <main className="container-fluid overflow-hidden">
+        <div className="row">
           {/* Sidebar (Desktop only) */}
-          <div className="col-lg-3 d-none d-lg-block">
+          <div className="col-lg-2 d-none d-lg-block px-0">
             <div className="h-100 rounded shadow-sm">
               <Sidebar2 />
             </div>
           </div>
 
           {/* Main Content */}
-          <div className="col-12 col-lg-9">
-            <div className="">
+          <div className="col-12 col-lg-10">
+            <div className="mt-2">
               <div>
                 <AgentList />
               </div>

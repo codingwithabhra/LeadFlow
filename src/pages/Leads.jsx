@@ -7,8 +7,8 @@ import Sidebar2 from "../components/Sidebar2";
 const Leads = () => {
   return (
     <>
-      <header className="bg-white py-3 position-relative shadow-sm">
-        <h1 className="fs-2 text-center text-dark m-0">Lead List</h1>
+      {/* <header className="bg-white py-3 position-relative shadow-sm">
+        <h1 className="fs-2 text-center text-dark m-0">Lead List</h1> */}
 
         {/* Toggle button (only visible on small screens) */}
         <button
@@ -18,7 +18,7 @@ const Leads = () => {
         >
           ☰
         </button>
-      </header>
+      {/* </header> */}
 
       {/* Sidebar Offcanvas (Mobile) */}
       <div
@@ -40,18 +40,18 @@ const Leads = () => {
       </div>
 
       {/* Desktop Layout */}
-      <main className="container-fluid mt-3">
-        <div className="row g-3">
+      <main className="container-fluid px-0">
+        <div className="row g-0">
           {/* Sidebar (Desktop only) */}
-          <div className="col-lg-3 d-none d-lg-block">
+          <div className="col-lg-2 d-none d-lg-block">
             <div className="h-100 rounded shadow-sm">
               <Sidebar2 />
             </div>
           </div>
 
           {/* Main Content */}
-          <div className="col-12 col-lg-9">
-            <div className="">
+          <div className="col-12 col-lg-10 px-1">
+            <div className="mx-3">
               <div>
                 <Leadoverview />
               </div>

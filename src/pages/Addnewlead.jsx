@@ -1,22 +1,21 @@
 import React from "react";
-import AddNewLead from "../components/AddNewLead";
-import Sidebar2 from "../components/Sidebar2";
-import Sidebar from "../components/Sidebar";
+import AddNewLead from "../components/AddNewLead/AddNewLead";
+import Sidebar2 from "../components/Sidebars/Sidebar2";
+import Sidebar from "../components/Sidebars/Sidebar";
 
 const Addnewlead = () => {
-
   return (
     <>
       {/* Header */}
 
-        {/* Toggle button (only visible on small screens) */}
-        <button
-          className="btn btn-primary d-lg-none position-absolute top-100 end-0 mx-2 my-2"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#mobileSidebar"
-        >
-          ☰
-        </button>
+      {/* Toggle button (only visible on small screens) */}
+      <button
+        className="btn btn-primary d-lg-none position-absolute top-100 end-0 mx-2 my-2"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#mobileSidebar"
+      >
+        ☰
+      </button>
       {/* </header> */}
 
       {/* Sidebar Offcanvas (Mobile) */}
@@ -39,22 +38,15 @@ const Addnewlead = () => {
       </div>
 
       {/* Desktop Layout */}
-      <main className="container-fluid p-0 overflow-hidden">
-        <div className="row">
-          {/* Sidebar (Desktop only) */}
-          <div className="col-lg-2 d-none d-lg-block">
-            <div className="rounded shadow-sm" style={{height: "100%", minHeight: "100vh"}}>
-              <Sidebar2 />
-            </div>
-          </div>
-
-          {/* Main Content */}
-          <div className="col-12 col-lg-10">
-            <div className="container mt-3">
-              <AddNewLead />
-            </div>
-          </div>
-        </div>
+      <main className="main-layout">
+        {/* Sidebar */}
+        <aside className="main-sidebar d-none d-lg-block">
+          <Sidebar2 />
+        </aside>
+        {/* Main Content */}
+        <section className="main-content">
+          <AddNewLead />
+        </section>
       </main>
     </>
   );

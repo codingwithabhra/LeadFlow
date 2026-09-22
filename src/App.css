@@ -1,3 +1,7 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
 body {
     margin: 0;
     background-color: rgb(245, 243, 243) !important;
@@ -11,24 +15,55 @@ ul li {
     list-style: none;
 }
 
-Link {
-    text-decoration: none;
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    background-color: #115bbd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1030;
+
+    box-sizing: border-box;
 }
+
+.header h1 {
+    width: clamp(150px, 20vw, 280px);
+    margin-bottom: 0;
+}
+
+.header h1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================
+   SIDEBAR LINK
+========================================= */
 
 .sidebar-link {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 12px 15px;
+    gap: 20px;
+    padding: 5px 10px;
     text-decoration: none;
     color: white;
-    font-weight: 500;
+    font-weight: 400;
     border-radius: 8px;
     transition: all 0.3s ease;
-}
-
-.sidebar-icon {
-    width: 24px;
 }
 
 .sidebar-link:hover {
@@ -37,6 +72,123 @@ Link {
     transform: translateX(6px);
 }
 
-canvas{
+.sidebar-icon {
+    width: 20px;
+}
+
+
+/* =========================================
+   CHART
+========================================= */
+
+canvas {
     max-height: 500px;
+}
+
+
+/* =========================================
+   DASHBOARD LAYOUT
+========================================= */
+
+.main-layout {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   DESKTOP SIDEBAR
+   1301px+
+========================================= */
+
+.main-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+
+    background-color: #115bbd;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    z-index: 1000;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+   1301px+
+========================================= */
+
+.main-content {
+    width: calc(100% - 260px);
+    margin-left: 260px;
+
+    min-height: 100vh;
+
+    padding: 1rem;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/* =========================================
+   COMPACT SIDEBAR
+   992px - 1300px
+========================================= */
+
+@media (min-width: 992px) and (max-width: 1300px) {
+
+    .main-sidebar {
+        width: 85px;
+    }
+
+    .main-content {
+        width: calc(100% - 85px);
+        margin-left: 85px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   Below 992px
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+
+        /* Leave space for fixed header */
+        margin-top: 70px;
+
+        /* Remaining viewport height */
+        height: calc(100vh - 70px);
+
+        padding: 1rem;
+
+        box-sizing: border-box;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.main-content::-webkit-scrollbar {
+    width: 7px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
 }

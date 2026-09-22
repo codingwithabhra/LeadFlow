@@ -1,0 +1,10 @@
+.comments-container {
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.comments-container::-webkit-scrollbar {
+    display: none;
+}

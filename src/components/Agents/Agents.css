@@ -1,0 +1,51 @@
+/* Mobile search overlay */
+.mobile-search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1055;
+
+  background: rgba(255, 255, 255, 0.97);
+  padding: 15px;
+
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.3s ease,
+    visibility 0.35s ease;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* When opened */
+.mobile-search-overlay.show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Search content */
+.mobile-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-search-box input {
+  height: 45px;
+}
+
+.flexbox-grow-1{
+    flex-grow: 1;
+}
+
+/* Only show this behavior on mobile */
+@media (min-width: 768px) {
+  .mobile-search-overlay {
+    display: none;
+  }
+}

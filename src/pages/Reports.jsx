@@ -1,64 +1,76 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import ReportContent from "../components/ReportContent";
-import Sidebar2 from "../components/Sidebar2";
+import ReportContent from "../components/Reports/ReportContent";
+import Sidebar from "../components/Sidebars/Sidebar";
+import Sidebar2 from "../components/Sidebars/Sidebar2";
+import ReportComponent from "../components/Reports/ReportComponent";
+import { Link } from "react-router-dom";
+import { FiMenu } from "react-icons/fi";
+import MobileNav from "../components/Sidebars/MobileNav";
+import { IoMdCloseCircle } from "react-icons/io";
 
 const Reports = () => {
   return (
     <>
-      {/* <header className="bg-white py-3 position-relative shadow-sm">
-        <h1 className="fs-2 text-center text-dark m-0">
-          LeadFlow : Reports
-        </h1> */}
+      {/* Header */}
+      <header className="header d-lg-none">
+        {/* Header */}
+        <h1 className="fw-bolder ms-3">
+          <Link to="/" className="header-logo">
+            {/* Large screen logo */}
+            <img
+              src="/Leadflowlogo-white.png"
+              alt="LeadFlow"
+              className="img-fluid"
+            />
+          </Link>
+        </h1>
 
         {/* Toggle button (only visible on small screens) */}
         <button
-          className="btn btn-primary d-lg-none position-absolute top-100 end-0 mx-2 my-2"
+          type="button"
+          className="btn p-0 border-0 bg-transparent d-lg-none me-3"
+          style={{ zIndex: 1 }}
           data-bs-toggle="offcanvas"
           data-bs-target="#mobileSidebar"
+          aria-label="Open menu"
         >
-          ☰
+          <FiMenu size={35} className="text-white" />
         </button>
-      {/* </header> */}
+      </header>
 
       {/* Sidebar Offcanvas (Mobile) */}
       <div
         className="offcanvas offcanvas-start d-lg-none"
         tabIndex="-1"
         id="mobileSidebar"
-        style={{ backgroundColor: "#003153" }}
+        style={{ backgroundColor: "#115bbd", maxWidth: "310px" }}
       >
-        <div className="offcanvas-header">
+        <div className="offcanvas-header" style={{ position: "relative" }}>
           <button
             type="button"
-            className="btn-close bg-white"
+            className="btn p-0 border-0 bg-transparent text-white"
             data-bs-dismiss="offcanvas"
-          ></button>
+            aria-label="Close"
+            style={{ position: "absolute", right: "20px", top: "20px" }}
+          >
+            <IoMdCloseCircle size={30} />
+          </button>
         </div>
-        <div className="offcanvas-body">
-          <Sidebar />
+        <div className="offcanvas-body mt-4">
+          <MobileNav />
         </div>
       </div>
 
       {/* Desktop Layout */}
-      <main className="container-fluid p-0 overflow-hidden">
-        <div className="row px-0">
-          {/* Sidebar (Desktop only) */}
-          <div className="col-lg-2 d-none d-lg-block px-0">
-            <div className="h-100 rounded shadow-sm">
-              <Sidebar2 />
-            </div>
-          </div>
-
-          {/* Main Content */}
-          <div className="col-12 col-lg-10">
-            <div className="mt-2">
-              <div className="mx-2">
-                <ReportContent />
-              </div>
-            </div>
-          </div>
-        </div>
+      <main className="main-layout">
+        {/* Sidebar */}
+        <aside className="main-sidebar d-none d-lg-block">
+          <Sidebar2 />
+        </aside>
+        {/* Main Content */}
+        <section className="main-content">
+          <ReportComponent />
+        </section>
       </main>
     </>
   );

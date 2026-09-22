@@ -1,0 +1,1 @@
+export const BASE_URL = "https://lead-flow-backend-gamma.vercel.app"

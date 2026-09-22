@@ -1,0 +1,122 @@
+/* =========================
+   GENERAL
+========================= */
+
+.heading-btns {
+  width: 100%;
+}
+
+.btns {
+  flex-wrap: nowrap;
+}
+
+.filter-dropdown-menu {
+  min-width: 250px;
+}
+
+.filter-dropdown-menu .form-select {
+  min-width: 220px;
+}
+
+
+/* =========================
+   MOBILE ACTIONS
+   Hidden by default
+========================= */
+
+.mobile-actions {
+  display: none;
+}
+
+.three-dot-btn {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border-radius: 50%;
+}
+
+
+/* =========================
+   RESPONSIVE FILTER MENU
+========================= */
+
+.responsive-filter-menu {
+  min-width: 320px;
+  max-width: calc(100vw - 30px);
+}
+
+.responsive-filter-menu .form-select {
+  width: 100%;
+}
+
+.responsive-section h6 {
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================
+   TABLET + MOBILE
+   991px and below
+========================= */
+
+@media (max-width: 991px) {
+
+  /* Hide desktop buttons */
+  .desktop-actions {
+    display: none !important;
+  }
+
+  /* Show three-dot menu */
+  .mobile-actions {
+    display: block;
+  }
+
+  /* Keep heading + three dots on same row */
+  .heading-btns {
+    flex-direction: row;
+    align-items: center !important;
+  }
+
+  .heading-btns h2 {
+    width: auto;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   575px and below
+========================= */
+
+@media (max-width: 575px) {
+
+  .filterBtn {
+    padding: 15px !important;
+  }
+
+  .heading-btns h2 {
+    font-size: 1.5rem;
+  }
+
+  .heading-btns h2 svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .heading-btns h2 .me-3 {
+    margin-right: 8px !important;
+  }
+
+  .responsive-filter-menu {
+    min-width: 280px;
+    max-width: calc(100vw - 30px);
+  }
+
+}

@@ -89,7 +89,7 @@ const AddLeadForm = () => {
 
           <hr />
 
-          <form className="py-4 px-5" onSubmit={handleform}>
+          <form className="py-4 px-2 px-sm-5" onSubmit={handleform}>
             {/* LEAD NAME */}
             <div className="row align-items-center pb-4">
               <div className="col-md-4">

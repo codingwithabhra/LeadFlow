@@ -62,7 +62,7 @@ const DashboardHeader = () => {
   }
 
   return (
-    <div className="headingInfo bg-white px-3 py-4 rounded shadow-sm mt-3 mb-4">
+    <div className="headingInfo bg-white px-3 py-4 rounded shadow-sm mt-1 mt-sm-3 mb-3 mb-sm-5">
       <div className="headingInfo-btns d-flex justify-content-between">
         {/* HEADER */}
         <h2 className="text-secondary d-flex justify-content-center align-items-center">

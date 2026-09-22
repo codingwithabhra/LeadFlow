@@ -19,7 +19,7 @@ const SearchAgentByName = () => {
   };
 
   return (
-    <div className="filterBtn bg-white px-3 py-4 rounded shadow-sm mt-3 mb-5">
+    <div className="filterBtn bg-white px-3 py-4 rounded shadow-sm mt-1 mt-sm-3 mb-3 mb-sm-5">
       <div className="container-fluid">
         <div className="heading-btns d-flex justify-content-between align-items-center">
           {/* Heading */}

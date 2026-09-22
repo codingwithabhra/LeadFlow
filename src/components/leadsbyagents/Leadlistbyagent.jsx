@@ -53,18 +53,18 @@ const Leadlistbyagent = () => {
     <div className="filterBtn bg-white px-3 py-4 rounded shadow-sm">
       <div className="container-fluid">
         {/* Header */}
-        <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-4">
+        <div className="d-flex flex-md-row justify-content-between align-items-center gap-4">
           <h4 className="fs-3 text-dark mb-0">
             <span className="text-secondary">
-              Total Lead List ({filteredLeads.length})
+              Total List ({filteredLeads.length})
             </span>
           </h4>
 
           {/* ADD NEW LEAD */}
           <div className="addNewLead">
-            <Link to="/leads/addnewlead" className="btn btn-success w-100">
-              <span>Add New Lead</span>
-              <span className="ms-2">
+            <Link to="/leads/addnewlead" className="btn btn-success w-100 d-flex justify-content-center align-items-center">
+              <span className="d-none d-md-block me-2">Add New Lead</span>
+              <span className="">
                 <IoMdAdd size={25} />
               </span>
             </Link>

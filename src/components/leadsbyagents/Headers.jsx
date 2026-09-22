@@ -30,9 +30,9 @@ const Headers = () => {
     });
   };
   return (
-    <div className="filterBtn bg-white px-3 py-4 rounded shadow-sm mt-3 mb-5">
+    <div className="filterBtn bg-white px-3 py-4 rounded shadow-sm mt-1 mt-sm-3 mb-3 mb-sm-5">
       <div className="container-fluid">
-        <div className="heading-btns d-flex justify-content-between align-items-center flex-wrap">
+        <div className="heading-btns d-flex flex-column flex-md-row justify-content-between align-items-center gap-4 gap-md-1">
           {/* HEADING */}
           <h2 className="text-secondary d-flex align-items-center mb-0">
             <span
@@ -65,13 +65,13 @@ const Headers = () => {
             {/* FILTER BY */}
             <div className="dropdown">
               <button
-                className="btn btn-outline-secondary dropdown-toggle"
+                className="btn btn-outline-secondary dropdown-toggle d-flex justify-content-center align-items-center"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 <IoFilterOutline size={20} className="me-2" />
-                Filter By
+                <span className="d-none d-lg-block">Filter By</span>
               </button>
 
               <div className="dropdown-menu p-3">
@@ -104,13 +104,13 @@ const Headers = () => {
             {/* SORT BY */}
             <div className="dropdown">
               <button
-                className="btn btn-outline-secondary dropdown-toggle"
+                className="btn btn-outline-secondary dropdown-toggle d-flex justify-content-center align-items-center"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 <TbArrowsSort size={20} className="me-2" />
-                Sort By
+                <span className="d-none d-lg-block">Sort By</span>
               </button>
 
               <div className="dropdown-menu p-3">
@@ -160,10 +160,10 @@ const Headers = () => {
 
             {/* CLEAR FILTER */}
             <button
-              className="btn btn-primary clear-filter-btn"
+              className="btn btn-primary clear-filter-btn d-flex justify-content-center align-items-center"
               onClick={clearFilters}
             >
-              <span>Clear Filters</span>
+              <span className="d-none d-lg-block">Clear Filters</span>
               <GiMagicBroom size={22} className="ms-2" />
             </button>
           </div>

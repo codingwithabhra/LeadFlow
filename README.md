@@ -31,7 +31,7 @@ npm run dev # or `npm start` / `yarn dev`
 ---
 
 ## Demo Video
-Watch a walkthrough (5-7 minutes) of all the major features of this app : [Watch Video](https://drive.google.com/drive/folders/1VTJ2wkY-JF_adq0GH6ZBmBFuIzM3Zprl?usp=sharing)
+Watch a walkthrough (5-7 minutes) of all the major features of this app : [Watch Video](https://drive.google.com/drive/folders/1ewpRziGEsAGuZdV1lIDCAf_68wjzzEfh?usp=sharing)
 
 ---
 

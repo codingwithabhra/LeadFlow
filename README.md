@@ -9,6 +9,15 @@ Built with React frontend, Express/Node backend, MONGODB and a responsive UI, it
 
 ---
 
+## Log In
+
+> **Guest**
+> Username: 'Megha Bhattacharya',
+> Email: 'megha.bhattacharya77@gmail.com',
+> Password: 'Megha@963'
+
+---
+
 ## Quick Start
 ```
 git clone https://github.com/codingwithabhra/LeadFlow.git

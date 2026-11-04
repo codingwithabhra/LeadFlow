@@ -45,8 +45,14 @@ Watch a walkthrough (5-7 minutes) of all the major features of this app : [Watch
 ---
 
 ## Features
+**Landing Page**
+- Sign up, Log in, Google Login button.
+- Heading and little description about the app.
+  
 **Home**
-- Display Leads, Lead Status and Quick Filters with a navigation bar.
+- Total leads, In pipeline, Closed leads and Total agent count.
+- Chart wise display of Lead status comparison and lead pipline.
+- Lead and agents details.
 
 **Lead Details**
 - View detailed lead information (name, sales sgent, source, status, priority & time to close).
@@ -74,6 +80,10 @@ Watch a walkthrough (5-7 minutes) of all the major features of this app : [Watch
 **Settings**
 - Lead list with delete option.
 - Sales Agent list with delete option.
+
+**My Profile**
+- User details info.
+- Log out button.
 
 ---
 
